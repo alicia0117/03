@@ -1,14 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
-   char c;
+    float a;
+    float b;
    
-   printf("input a character :");
-   scanf("%c", &c);
+   printf("분자를 입력하세요 :");
+   scanf("%f",&a);
+   printf("분모를 입력하세요 :");
+   scanf("%f",&b);
    
-   printf("The next character of %c is \n",c);
+   printf("나누기의 결과는 %f입니니.\n",(float)a/b);
   
   system("PAUSE");	
   return 0;
